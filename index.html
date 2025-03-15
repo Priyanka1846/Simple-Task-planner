@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do List</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+       
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    background-color: #999797;
+}
+.container {
+    max-width: 400px;
+    margin: 50px auto; 
+    align-items: center;
+    background: #2c282899; 
+    backdrop-filter: blur(10px); 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+input[type="date"],
+input[type="text"] {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: block;
+    margin: 10px auto;
+}
+
+button {
+    padding: 10px 20px;
+    background: #333;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin: 10px auto;
+}
+
+button:hover {
+    background: #444;
+}
+
+#task-list, #task-history {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    margin: 0 auto;
+    width: 90%;
+}
+
+.task-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>To-do List</h1>
+        <label for="task-date">Select Date:</label>
+        <input type="date" id="task-date">
+        <br><br>
+        <input type="text" id="task-input" placeholder="Enter a task">
+        <button onclick="addTask()">Add Task</button>
+        
+        <h2>Today's Tasks</h2>
+        <ul id="task-list"></ul>
+        
+        <h2>Task History</h2>
+        <ul id="task-history"></ul>
+    </div>
+
+    <script src="script</script>
+</body>
+</html>
