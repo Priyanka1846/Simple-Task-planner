@@ -1,17 +1,14 @@
-/* General Reset */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Body Styles */
 body {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
-    background: linear-gradient(-45deg, #4158D0, #e568dc, #ffb374, #ef5f5f, #d840b6);
-    background-size: 400% 400%;
-    animation: gradient 15s ease infinite;
+    background: #ffffff; 
     margin: 0;
     min-height: 100vh;
     display: flex;
@@ -20,69 +17,56 @@ body {
     padding: 20px;
 }
 
-/* Gradient Animation */
-@keyframes gradient {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
-}
-
-/* Container Styles */
 .container {
-    max-width: 500px;
+    max-width: 400px;
     width: 100%;
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(15px);
-    border-radius: 15px;
-    padding: 25px;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: #ffffff; 
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
 }
 
-/* Heading Styles */
 h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: bold;
-    color: #ffffff;
+    color: #333;
     margin-bottom: 20px;
-    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
 }
 
 h2 {
-    font-size: 1.5rem;
-    color: #faf9f6;
+    font-size: 1.25rem;
+    color: #555; 
     margin-top: 20px;
-    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid #ddd; 
     padding-bottom: 10px;
 }
 
-/* Input and Button Styles */
 input[type="date"],
 input[type="text"] {
     width: 100%;
-    padding: 12px;
+    padding: 10px;
     margin: 10px 0;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    border-radius: 8px;
+    border: 1px solid #ddd; 
+    border-radius: 5px;
     font-size: 1rem;
-    color: #333;
-    background: rgba(255, 255, 255, 0.8);
+    color: #333; 
+    background: #f9f9f9;
     transition: all 0.3s ease;
 }
 
 input:focus {
-    border-color: #ffb374;
-    box-shadow: 0 0 10px rgba(255, 179, 116, 0.5);
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
     outline: none;
 }
 
 button {
-    padding: 12px 24px;
+    padding: 10px 20px;
     font-size: 1rem;
-    background: #ff6b81;
+    background: #2d3743; 
     color: white;
     border: none;
-    border-radius: 8px;
+    border-radius: 5px;
     cursor: pointer;
     transition: background 0.3s ease;
     width: 100%;
@@ -90,38 +74,31 @@ button {
 }
 
 button:hover {
-    background: #ff3b61;
+    background: #151f2b;
 }
 
-/* Task List Styles */
 #task-list,
 #task-history {
     list-style: none;
     padding: 0;
-    text-align: center;
-    margin: 0 auto;
-    width: 100%;
+    text-align: left;
+    margin: 0;
 }
 
 .task-item {
     display: flex;
     align-items: center;
-    background: rgba(255, 255, 255, 0.2);
-    padding: 12px;
+    background: #f9f9f9;
+    padding: 10px;
     margin: 8px 0;
-    border-radius: 8px;
+    border-radius: 5px;
     font-size: 1rem;
-    color: #fff;
+    color: #333;
     transition: background 0.3s ease;
-    width: 100%;
 }
 
 .task-item:hover {
-    background: rgba(255, 255, 255, 0.3);
-}
-.task-item span{
-    flex: 1;
-    text-align: center;
+    background: #eee;
 }
 
 .task-item input[type="checkbox"] {
@@ -130,15 +107,15 @@ button:hover {
     margin-right: 10px;
     cursor: pointer;
     appearance: none;
-    border: 2px solid #fff;
+    border: 2px solid #007bff;
     border-radius: 4px;
     background: transparent;
     position: relative;
 }
 
 .task-item input[type="checkbox"]:checked {
-    border-color: #74bb77;
-    background: #74bb77;
+    border-color: #007bff;
+    background: #007bff;
 }
 
 .task-item input[type="checkbox"]:checked::after {
