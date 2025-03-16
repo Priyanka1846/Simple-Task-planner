@@ -1,10 +1,10 @@
 # Task Planner
 
 ## Overview
-     Task Planner is a simple and efficient tool designed to help manage daily tasks. It allows users to add, track, and complete tasks with an interactive checkbox feature. The planner provides a clear and organized way to stay on top of tasks while offering a user-friendly interface.
+Task Planner is a simple and efficient tool designed to help manage daily tasks. It allows users to add, track, and complete tasks with an interactive checkbox feature. The planner provides a clear and organized way to stay on top of tasks while offering a user-friendly interface.
 
 ## Features
-     Add and Manage Tasks – Users can enter tasks along with a date and description.
+  Add and Manage Tasks – Users can enter tasks along with a date and description.
 Task Completion Options – Tasks can be marked as completed (✔) in the checkbox at the end of the day.
 Task History – Completed and pending tasks are displayed for easy tracking.
 
