@@ -1,12 +1,10 @@
 let tasks = {};
 
-// Set today's date as the default date when the page loads
 document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("task-date").valueAsDate = new Date();
     renderTasks();
 });
 
-// Function to add a new task
 function addTask() {
     let date = document.getElementById("task-date").value;
     let taskInput = document.getElementById("task-input").value.trim();
@@ -28,13 +26,11 @@ function addTask() {
     renderTasks();
 }
 
-// Function to toggle task done status
 function toggleTaskDone(checkbox, date, index) {
     tasks[date][index].done = checkbox.checked;
     renderTasks();
 }
 
-// Function to render tasks
 function renderTasks() {
     let selectedDate = document.getElementById("task-date").value;
     let taskList = document.getElementById("task-list");
